@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Our Services | NextGen Innov8rs - Web Development, SEO & Digital Marketing</title>
+
+    <link rel="icon" href="favicon/favicon.ico" type="image/x-icon">
+    <link rel="apple-touch-icon" sizes="180x180" href="Favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="Favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="Favicon/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="NextGen Innov8rs provides a range of services including web development, SEO optimization, digital marketing, and IT consulting. Contact us today for business growth." name="description">
+    <meta content="web development, SEO, digital marketing, IT solutions, business services, website design, branding, consulting" name="keywords">
+    
+    <!-- Open Graph Meta Tags for Social Media -->
+    <meta property="og:title" content="Our Services | NextGen Innov8rs Web Development, SEO & Digital Marketing">
+    <meta property="og:description" content="Explore NextGen Innov8rs' services in web development, SEO, and digital marketing to grow your business online. Reach out today for innovative solutions.">
+    <meta property="og:image" content="https://www.facebook.com/profile.php?id=61552024827199&mibextid=ZbWKwL">
+    <meta property="og:url" content="https://www.NextGenInnova8rs.com/services">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Our Services | NextGen Innov8rs - Web Development, SEO & Digital Marketing">
+    <meta name="twitter:description" content="Discover our services including web development, SEO, digital marketing, and IT consulting. HighTech IT Solutions helps you take your business to the next level.">
+    <meta name="twitter:image" content="https://github.com/Shoaibrasoolkhattak">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Saira:wght@500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Icon Font Stylesheet -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/animate/animate.min.css" rel="stylesheet">
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Template Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
+    <style>
+        .service-container {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: space-between;
+            margin-bottom: 60px;
+        }
+
+        .service-text {
+            flex: 0 0 48%;
+            padding: 20px;
+        }
+
+        .service-image {
+            flex: 0 0 48%;
+            text-align: center;
+        }
+
+        .service-image img {
+            width: 100%;
+            max-height: 400px;
+            object-fit: cover;
+            border-radius: 10px;
+        }
+
+        .service-title {
+            font-size: 36px;
+            font-weight: 600;
+            color: #333;
+            margin-bottom: 20px;
+        }
+
+        .service-description {
+            font-size: 18px;
+            color: #777;
+            line-height: 1.6;
+        }
+
+        .service-icon {
+            font-size: 40px;
+            color: #007bff;
+            margin-bottom: 20px;
+        }
+
+        .services-section {
+            padding: 80px 0;
+        }
+
+        /* General Styling for Service Container */
+        .service-container {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: space-between;
+            margin-bottom: 60px;
+        }
+
+        /* Service Text Styling */
+        .service-text {
+            flex: 0 0 48%;
+            padding: 20px;
+        }
+
+        /* Service Image Styling */
+        .service-image {
+            flex: 0 0 48%;
+            text-align: center;
+            position: relative;
+        }
+
+        /* Make sure the image fills its container without distortion */
+        .service-image img {
+            width: 100%;
+            height: auto;
+            /* Adjust this to maintain aspect ratio */
+            max-height: 400px;
+            /* You can adjust this max-height if needed */
+            object-fit: cover;
+            border-radius: 10px;
+        }
+
+        /* Heading and Description Styling */
+        .service-title {
+            font-size: 36px;
+            font-weight: 600;
+            color: #333;
+            margin-bottom: 20px;
+        }
+
+        .service-description {
+            font-size: 18px;
+            color: #777;
+            line-height: 1.6;
+        }
+
+        /* Icon Styling */
+        .service-icon {
+            font-size: 40px;
+            color: #007bff;
+            margin-bottom: 20px;
+        }
+
+        /* Section Padding */
+        .services-section {
+            padding: 80px 0;
+        }
+
+        /* Responsive Design for Smaller Screens */
+        @media (max-width: 768px) {
+            .service-container {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .service-text,
+            .service-image {
+                flex: 0 0 100%;
+                text-align: center;
+            }
+
+            .service-image img {
+                max-height: 300px;
+                /* Adjust max-height for smaller screens */
+                height: auto;
+                /* Ensure image aspect ratio is preserved */
+            }
+        }
+
+        /* Responsive Design for Mobile Screens */
+        @media (max-width: 480px) {
+            .service-container {
+                padding: 10px;
+            }
+
+            .service-title {
+                font-size: 28px;
+            }
+
+            .service-description {
+                font-size: 16px;
+            }
+
+            .service-image img {
+                max-height: 250px;
+                /* Further adjust max-height for mobile screens */
+            }
+        }
+    </style>
+</head>
+
+<body>
+   <!-- Spinner Start -->
+   <div id="spinner" class="show position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+    <div class="spinner-grow text-primary" role="status"></div>
+</div>
+<!-- Spinner End -->
+
+<!-- Topbar Start -->
+<div class="container-fluid bg-dark py-2 d-none d-md-flex">
+    <div class="container">
+        <div class="d-flex justify-content-between topbar">
+            <div class="top-info">
+                <small class="me-3 text-white-50"><a href="#"><i class="fas fa-map-marker-alt me-2 text-secondary"></i></a>Gulab shah Markeet Sabir abad katak kpk pakistan</small>
+                <small class="me-3 text-white-50"><a href="#"><i class="fas fa-envelope me-2 text-secondary"></i></a>shadmanaminktk38@gmail.com</small>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Topbar End -->
+
+<!-- Navbar Start -->
+<div class="container-fluid bg-primary">
+    <div class="container">
+        <nav class="navbar navbar-dark navbar-expand-lg py-0">
+            <a href="index.html" class="navbar-brand">
+                <h1 class="text-white fw-bold d-block">NextGen<span class="text-secondary">Innov8rs</span></h1>
+            </a>
+            <button type="button" class="navbar-toggler me-0" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+        </nav>
+    </div>
+</div>
+<!-- Navbar End -->
+
+<!-- Page Header Start -->
+<div class="container-fluid page-header py-5">
+    <div class="container text-center py-5">
+        <h1 class="display-2 text-white mb-4 animated slideInDown">Our Services</h1>
+        <nav aria-label="breadcrumb animated slideInDown">
+            <ol class="breadcrumb justify-content-center mb-0">
+                <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+                <li class="breadcrumb-item"><a href="service.html">Services</a></li>
+                <li class="breadcrumb-item active" aria-current="page">Our Services</li>
+            </ol>
+        </nav>
+    </div>
+</div>
+<!-- Page Header End -->
+
+    <!-- Services Start -->
+    <div class="container services-section">
+        <!-- Service 1: Web Design and Development -->
+        <div class="service-container">
+            <div class="service-text">
+                <div class="service-icon">
+                    <i class="fas fa-laptop-code"></i>
+                </div>
+                <h2 class="service-title">Web Design and Development</h2>
+                <p class="service-description">We bring your ideas to life with custom website designs and seamless
+                    functionality. Our experienced team of designers and developers specializes in creating both
+                    portfolio sites and sophisticated e-commerce platforms. We ensure that every website we create is
+                    not only visually appealing but also user-friendly, responsive, and optimized for all devices,
+                    whether on desktop or mobile. We understand that your website is often the first point of contact
+                    with potential customers, and we make sure it represents your brand in the best light possible. From
+                    front-end design to back-end development, we handle every aspect of the website creation process to
+                    meet your unique needs and business goals.</p>
+            </div>
+            <div class="service-image">
+                <img src="img/web dev.jpg" alt="Web Design and Development">
+            </div>
+        </div>
+
+        <!-- Service 2: SEO and Digital Marketing -->
+        <div class="service-container">
+            <div class="service-text">
+                <div class="service-icon">
+                    <i class="fas fa-search-dollar"></i>
+                </div>
+                <h2 class="service-title">SEO and Digital Marketing</h2>
+                <p class="service-description">Maximize your online visibility with tailored SEO strategies and digital
+                    marketing campaigns. Our experts use advanced SEO techniques to help your website rank higher in
+                    search engine results, improving your online visibility and driving organic traffic. In addition to
+                    SEO, our digital marketing services include social media management, email marketing, paid
+                    advertising, and content marketing, ensuring that you reach the right audience across various
+                    platforms. We customize our marketing strategies to align with your business goals and target
+                    audience, ensuring measurable success and long-term growth. With our digital marketing solutions,
+                    you can stay ahead of the competition and achieve sustained business growth in a rapidly evolving
+                    digital world.</p>
+            </div>
+            <div class="service-image">
+                <img src="img/SEO 2.jpg" alt="SEO and Digital Marketing">
+            </div>
+        </div>
+
+        <!-- Service 3: Graphic Design and Branding -->
+        <div class="service-container">
+            <div class="service-text">
+                <div class="service-icon">
+                    <i class="fas fa-paint-brush"></i>
+                </div>
+                <h2 class="service-title">Graphic Design and Branding</h2>
+                <p class="service-description">Create captivating visuals that define your brand, from logos to social
+                    media posts and more. Our graphic design and branding services help businesses craft a distinct
+                    visual identity that resonates with their target audience. Whether you need a modern logo, brand
+                    guidelines, promotional materials, or eye-catching social media posts, we’ve got you covered. We
+                    collaborate with you to understand your brand’s personality, values, and vision, ensuring that every
+                    design aligns with your company’s goals. Our creative designs will not only capture attention but
+                    also build brand recognition and trust. From concept to final design, we aim to deliver visuals that
+                    are as memorable as they are impactful.</p>
+            </div>
+            <div class="service-image">
+                <img src="img/Graphic Design and Branding.avif" alt="Graphic Design and Branding">
+            </div>
+        </div>
+
+        <!-- Service 4: Content Creation and Blog Copy -->
+        <div class="service-container">
+            <div class="service-text">
+                <div class="service-icon">
+                    <i class="fas fa-pen-alt"></i>
+                </div>
+                <h2 class="service-title">Content Creation and Blog Copy</h2>
+                <p class="service-description">Tell your brand's story with engaging, SEO-friendly content including
+                    blog posts, website copy, and more. Our team of expert writers crafts high-quality content that
+                    speaks directly to your audience, driving engagement and conversions. Whether you need long-form
+                    articles, regular blog updates, or web copy for your landing pages, we provide content that is both
+                    informative and persuasive. We optimize every piece of content for search engines, ensuring that it
+                    ranks well and attracts organic traffic. Our writers research your industry and audience to create
+                    content that is both relevant and valuable. We help you build a strong online presence by telling
+                    stories that resonate and keep your audience coming back for more.</p>
+            </div>
+            <div class="service-image">
+                <img src="img/Contant Blog.jpg" alt="Content Creation and Blog Copy">
+            </div>
+        </div>
+
+        <!-- Service 5: Video Editing and Multimedia -->
+        <div class="service-container">
+            <div class="service-text">
+                <div class="service-icon">
+                    <i class="fas fa-video"></i>
+                </div>
+                <h2 class="service-title">Video Editing and Multimedia</h2>
+                <p class="service-description">Transform raw footage into compelling stories with polished promotional
+                    videos and creative edits. Our video editing team specializes in producing high-quality videos that
+                    help brands communicate their message clearly and effectively. From commercials and promotional
+                    videos to product demos and social media clips, we work with you to craft videos that grab attention
+                    and leave a lasting impression. We offer professional video editing, color correction, sound
+                    editing, and animation services to make sure your videos stand out from the crowd. Whether for
+                    YouTube, social media, or corporate presentations, our video content will capture your audience’s
+                    attention and elevate your brand’s online presence.</p>
+            </div>
+            <div class="service-image">
+                <img src="img/Video editing.jpg" alt="Video Editing and Multimedia">
+            </div>
+        </div>
+
+        <!-- Service 6: Data Entry and Office Solutions -->
+        <div class="service-container">
+            <div class="service-text">
+                <div class="service-icon">
+                    <i class="fas fa-table"></i>
+                </div>
+                <h2 class="service-title">Data Entry and Office Solutions</h2>
+                <p class="service-description">Streamline your workflow with reliable data entry, document formatting,
+                    and office-related tasks (MS Word, Excel, PowerPoint). Our team offers efficient and accurate data
+                    entry services to help businesses manage large amounts of information. Whether you need to convert
+                    data from paper to digital, clean up existing databases, or input data into spreadsheets, we can
+                    handle it all. We also offer document formatting services, ensuring that your reports,
+                    presentations, and spreadsheets are professionally formatted and ready for presentation. Our office
+                    solutions are designed to save you time, allowing you to focus on your core business operations
+                    while we take care of the administrative work.</p>
+            </div>
+            <div class="service-image">
+                <img src="img/data Entry.png" alt="Data Entry and Office Solutions">
+            </div>
+        </div>
+
+    </div>
+
+
+<!-- Footer Start -->
+<div class="container-fluid footer bg-dark wow fadeIn" data-wow-delay=".3s">
+    <div class="container pt-5 pb-4">
+        <div class="row g-5">
+            <div class="col-lg-3 col-md-6">
+                <a href="index.html">
+                    <h1 class="text-white fw-bold d-block">NextGen <span class="text-secondary">Innova8rs</span></h1>
+                </a>
+                <p class="mt-4 text-light">We are pioneers in Web Development, Chatbot Development, and Creative Design Solutions. We bring innovative ideas to life and help businesses grow online with cutting-edge technologies.</p>
+                <div class="d-flex hightech-link">
+                    <a href="https://www.facebook.com/profile.php?id=61552024827199&mibextid=ZbWKwL" class="btn-light nav-fill btn btn-square rounded-circle me-2"><i class="fab fa-facebook-f text-primary"></i></a>
+                    <a href="https://github.com/Shoaibrasoolkhattak" class="btn-light nav-fill btn btn-square rounded-circle me-2"><i class="fab github text-primary"></i></a>
+                    <a href="https://www.instagram.com/shadman9713/profilecard/?igsh=MXZjcGNlYm81ZHlpMw==" class="btn-light nav-fill btn btn-square rounded-circle me-2"><i class="fab fa-instagram text-primary"></i></a>
+                    <a href="https://www.linkedin.com/in/shadman-amin-5a5498208?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" class="btn-light nav-fill btn btn-square rounded-circle me-0"><i class="fab fa-linkedin-in text-primary"></i></a>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6">
+                <a href="#" class="h3 text-secondary">Quick Links</a>
+                <div class="mt-4 d-flex flex-column short-link">
+                    <a href="About us.html" class="mb-2 text-white"><i class="fas fa-angle-right text-secondary me-2"></i>About Us</a>
+                    <a href="contact.html" class="mb-2 text-white"><i class="fas fa-angle-right text-secondary me-2"></i>Contact Us</a>
+                    <a href="projects.html" class="mb-2 text-white"><i class="fas fa-angle-right text-secondary me-2"></i>Our Projects</a>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6">
+                <a href="faqs.html" class="h3 text-secondary">FAQs</a> <!-- Corrected link -->
+                <div class="mt-4 d-flex flex-column help-link">
+                    <a href="faq.html" class="mb-2 text-white"><i class="fas fa-angle-right text-secondary me-2"></i>FAQ</a>
+                    <a href="contact.html" class="mb-2 text-white"><i class="fas fa-angle-right text-secondary me-2"></i>Contact</a>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6">
+                <a href="#" class="h3 text-secondary">Contact Us</a>
+                <div class="text-white mt-4 d-flex flex-column contact-link">
+                    <a href="https://www.google.com/maps?q=123+Street,+Sabir+Abad,+Karak,+KPK,+Pakistan" class="pb-3 text-light border-bottom border-primary"><i class="fas fa-map-marker-alt text-secondary me-2"></i>123 Street, Sabir Abad, Karak, KPK, Pakistan</a>
+                    <a href="tel:+923348135975" class="py-3 text-light border-bottom border-primary"><i class="fas fa-phone-alt text-secondary me-2"></i>+92 334 813 5975</a>
+                    <a href="mailto:shadmanaminktk38@gmail.com" class="py-3 text-light border-bottom border-primary"><i class="fas fa-envelope text-secondary me-2"></i>shadmanaminktk38@gmail.com</a>
+                </div>
+            </div>
+        </div>
+        <hr class="text-light mt-5 mb-4">
+        <div class="row">
+            <div class="col-md-6 text-center text-md-start">
+                <span class="text-light"><a href="#" class="text-secondary"><i class="fas fa-copyright text-secondary me-2"></i>NextGen Innova8rs</a>, All rights reserved.</span>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Footer End -->
+
+<!-- Back to Top -->
+<a href="#" class="btn btn-secondary btn-square rounded-circle back-to-top"><i class="fa fa-arrow-up text-white"></i></a>
+
+<!-- JavaScript Libraries -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+<script src="lib/wow/wow.min.js"></script>
+<script src="lib/easing/easing.min.js"></script>
+<script src="lib/waypoints/waypoints.min.js"></script>
+<script src="lib/owlcarousel/owl.carousel.min.js"></script>
+
+<!-- Template Javascript -->
+<script src="js/main.js"></script>
+</body>
+
+</html>
